@@ -8,7 +8,7 @@ Augmenting LLMs with context leads to improved performance across many applicati
 
 ## Key Findings
 - Larger models with higher baseline performance (Gemini 1.5 Pro, GPT 4o, Claude 3.5) excel at answering queries when the context is sufficient, but often output incorrect answers instead of abstaining when the context is not sufficient
-- Smaller models with lower baseline performance (Llama 3.1, Mistral 3, Gemma 2) hallucinate or abstain often, even with sufficient context
+- Smaller models with lower baseline performance (Mistral 3, Gemma 2) hallucinate or abstain often, even with sufficient context
 - SOTA LLMs output correct responses 35–62% of the time with insufficient context
 - Our selective generation method improves the fraction of correct answers among model responses by 2–10% for Gemini, GPT, and Gemma
 
