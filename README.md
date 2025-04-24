@@ -44,8 +44,7 @@ Metrics: 93 % accuracy · 0.94 F1 (beating TRUE-NLI, FLAMe, and “answer-string
 ### Dataset Sufficiency Rates
 
 Many “gold” snippets are in fact insufficient, and longer context windows beyond 6k tokens yield negligible gains.
-
-![Fraction of Datasets with Sufficient Context](compare_fraction_sufficient_context_small.png)
+<img src="compare_fraction_sufficient_context_small.png" width="60%" alt="Fraction of Datasets with Sufficient Context">
 
 ### Model Error Decomposition
 
