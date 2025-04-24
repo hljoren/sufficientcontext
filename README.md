@@ -6,7 +6,7 @@ Hailey Joren (UC San Diego), Jianyi Zhang (Duke University), Chun-Sung Ferng (Go
 ## ✨ Overview
 When Large Language Models (LLMs) receive extra context at inference time -- so-called retrieval-augmented generation (RAG) -- overall performance often improves. But when the answer is still wrong, is it because the model failed to use the evidence or because the evidence never included enough information?
 
-This work introduces Sufficient Context -- a test for whether the retrieved snippets alone could plausibly answer the question. Using this signal, we uncover new failure modes, design better abstention strategies, and cut hallucinations by up to 10 percentage points across GPT-4o, Gemini 1.5 Pro, Claude 3.5 Sonnet, and Gemma 2.
+This work introduces Sufficient Context -- a test for whether the retrieved snippets alone could plausibly answer the question. Using this signal, we uncover new failure modes, design better abstention strategies, and lift selective accuracy by 2–10 percentage points at the same coverage.
 
 ## 🔑 Key Ideas & Contributions
 
