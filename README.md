@@ -88,14 +88,14 @@ The blend re-orders answers by “trustworthiness” and sets a configurable abs
 **Result:** Up to 10 pp gain in selective accuracy at the same coverage, especially on multi-hop HotPotQA.
 
 ## 📖 Citation 
-
+```bibtex
 @inproceedings{joren2025sufficient,
   title     = {Sufficient Context: A New Lens on Retrieval-Augmented Generation Systems},
   author    = {Joren, Hailey and Zhang, Jianyi and Ferng, Chun-Sung and Juan, Da-Cheng and Taly, Ankur and Rashtchian, Cyrus},
   booktitle = {International Conference on Learning Representations (ICLR)},
   year      = {2025}
 }
-
+```
 
 ## 🤝 Contact
 Questions or ideas? Open an issue or email hjoren@ucsd.edu.
@@ -105,7 +105,7 @@ Questions or ideas? Open an issue or email hjoren@ucsd.edu.
 
 ### Sufficient Context Autorater Prompt
 
-```python
+```text
 You are an expert LLM evaluator that excels at evaluating a QUESTION and REFERENCES.
 Consider the following criteria:
 Sufficient Context: 1 IF the CONTEXT is sufficient to infer the answer to the question and 0
@@ -157,7 +157,7 @@ EVALUATION (JSON)
 
 ### FLAMe Prompt
 
-```python
+```text
 INSTRUCTIONS:
 title: Is the context sufficient to infer the answer to the question?
 description: In this task, you will be provided with documents and a question. Use one of the
@@ -171,7 +171,7 @@ documents:<references> question: <question>
 
 ### LLM Eval Prompt
 
-```python
+```text
 ===Task===
 I need your help in evaluating an answer provided by an LLM against ground truth answers.
 Your task is to determine if the LLM’s response matches the ground truth answers. Please
