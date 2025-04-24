@@ -23,7 +23,7 @@ This work introduces Sufficient Context -- a test for whether the retrieved snip
 
 Multi-hop reasoning is allowed, but leaps of faith are not. Ambiguities must be fully resolved inside the snippet bundle.
 
-![Sufficient Context Examples](sufficient_context_figures_pg5.png)
+![Sufficient Context Examples](resources/sufficient_context_figures_pg5.png)
 
 
 ## 📊 The Sufficient Context Autorater
@@ -46,7 +46,7 @@ Metrics: 93 % accuracy · 0.94 F1 (beating TRUE-NLI, FLAMe, and “answer-string
 Many “gold” snippets are in fact insufficient, and longer context windows beyond 6k tokens yield negligible gains.
 
 <p align="center">
-<img src="compare_fraction_sufficient_context_small.png" width="60%" alt="Fraction of Datasets with Sufficient Context">
+<img src="resources/compare_fraction_sufficient_context_small.png" width="60%" alt="Fraction of Datasets with Sufficient Context">
 </p>
 
 ### Model Error Decomposition
@@ -59,7 +59,7 @@ When context is **insufficient**:
 - Hallucinations climb to 15–40 %
 - Larger models still answer correctly up to 35 % of the time -- often via parametric memory.
 
-![Performance Stratified by Sufficient Context](compare_performance_sufficient_context_stacked.png)
+![Performance Stratified by Sufficient Context](resources/compare_performance_sufficient_context_stacked.png)
 
 ### Why Can LLMs Be Correct With Insufficient Context?
 
@@ -83,7 +83,7 @@ We train a lightweight logistic head on two signals:
 
 The blend re-orders answers by “trustworthiness” and sets a configurable abstention threshold.
 
-![Selective generation on HotpotQA and Musique](accuracy_vs_coverage_grid_3_models_2_datasets.png)
+![Selective generation on HotpotQA and Musique](resources/accuracy_vs_coverage_grid_3_models_2_datasets.png)
 
 **Result:** Up to 10 pp gain in selective accuracy at the same coverage, especially on multi-hop HotPotQA.
 
