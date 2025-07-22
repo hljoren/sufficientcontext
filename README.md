@@ -162,8 +162,8 @@ INSTRUCTIONS:
 title: Is the context sufficient to infer the answer to the question?
 description: In this task, you will be provided with documents and a question. Use one of the
 following labels under ’judgment’:
-1. sufficient: The documents are not sufficient to infer the answer to the question.
-2. insufficient: The documents are sufficient to infer the answer to the question.
+1. sufficient: The documents are sufficient to infer the answer to the question.
+2. insufficient: The documents are not sufficient to infer the answer to the question.
 output_fields: judgment
 CONTEXT:
 documents:<references> question: <question>
